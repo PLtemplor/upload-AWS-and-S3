@@ -1,0 +1,14 @@
+apiVersion: skaffold/v2beta10
+kind: Config
+build:
+  artifacts:
+    - image: 575401887396.dkr.ecr.us-east-1.amazonaws.com/v2-uploader-service
+  local:
+    useDockerCLI: true
+    useBuildkit: false
+profiles:
+  - name: dev
+    deploy:
+      kustomize:
+        paths: 
+        - k8s/dev

@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-express-actions",
+  "version": "12.21.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon -r esm server.js"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1044.0",
+    "body-parser": "1.19.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "express": "4.16.4",
+    "multer": "^1.4.3",
+    "multer-s3": "^2.10.0",
+    "node-fetch": "2.6.1"
+  },
+  "devDependencies": {
+    "esm": "^3.2.25",
+    "nodemon": "2.0.3"
+  },
+  "keywords": []
+}
