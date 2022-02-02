@@ -1,0 +1,9 @@
+export S3_ACCESS_KEY_ID=x
+export S3_SECRET_ACCESS_KEY=y/T7aVjiJ28Uq
+export S3_ENDPOINT=s3.amazonaws.com
+export S3_BUCKET=hera7-dev
+export S3_REGION=*
+export MONGO_USER=jhon
+export MONGO_PASSWORD=admin
+export DB_NAME=iqtech
+export PORT=3000

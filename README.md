@@ -1,13 +1,10 @@
 # V2 uploader service Backend
  
-this is the hero7 service which is used to save files in DigitalOcean, then save its url in a database using Hasura, the service was created in Node.js.
+this is the hero7 service which is used to save files in DigitalOcean and AWS S3, the service was created in Node.js.
 
-currently it depends on the Hasura service.
  
 ## Requirements
 * Node.js
-* Postgres:12
-* PgAdmin4
 * Docker
 * Postman
  
@@ -15,7 +12,7 @@ currently it depends on the Hasura service.
  
 ### **Environment variable configuration ()**
  
-the .envrc is used to be able to connect to an S3 server which in this case would be DigitalOcean and also to the Hasura service
+the .envrc is used to be able to connect to an S3 server which in this case would be DigitalOcean and AWS S3
 
 1. should be at the same level as server.js
  
@@ -29,8 +26,7 @@ export S3_ACCESS_KEY_ID=your access key id
 export S3_SECRET_ACCESS_KEY=your access secret
 export S3_ENDPOINT=your endpoint
 export S3_BUCKET=your buecket
-export HASURA_HOST=your hasura host
-export HASURA_GRAPHQL_ADMIN_SECRET=your key code
+export S3_REGION=*
 ```
  
 ## Install

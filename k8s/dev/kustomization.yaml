@@ -24,6 +24,4 @@ configMapGenerator:
       - S3_SECRET_ACCESS_KEY=2uTlJ3hcbQ3tnir3209mD2D4P5wWhHEEPV72ej+q
       - S3_ENDPOINT=com.amazonaws.us-east-1.s3
       - S3_BUCKET=hero7
-      - HASURA_HOST=http://hasura.services.svc/v1/graphql
-      - HASURA_GRAPHQL_ADMIN_SECRET=H4suR4Cmby
       - PORT=3000
