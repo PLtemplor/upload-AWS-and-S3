@@ -1,15 +1,7 @@
 "use strict";
-const express = require("express");
-
-const app = express();
-
+const config = require('config');
+const app = require('./src/app');
 
 
-const awsUP = require('./src/aws.js');
-const upDigi = require('./src/digiOcen.js');
 
-//awsUP.uploadAWS();
-//upDigi.digiUP();
-awsUP.awsUp();
-
-
+app.listen(config.get('port'));
